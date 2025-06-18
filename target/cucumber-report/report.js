@@ -2,7 +2,12 @@ $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.
 formatter.feature({
   "name": "Login Feature",
   "description": "",
-  "keyword": "Feature"
+  "keyword": "Feature",
+  "tags": [
+    {
+      "name": "@Login"
+    }
+  ]
 });
 formatter.background({
   "name": "",
@@ -35,7 +40,15 @@ formatter.result({
 formatter.scenario({
   "name": "Login Success",
   "description": "",
-  "keyword": "Scenario"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@Login"
+    },
+    {
+      "name": "@sanity"
+    }
+  ]
 });
 formatter.step({
   "name": "I enter the Username",
@@ -111,7 +124,15 @@ formatter.result({
 formatter.scenario({
   "name": "Login Failure Scenario using test data as parameter",
   "description": "",
-  "keyword": "Scenario"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@Login"
+    },
+    {
+      "name": "@sanity"
+    }
+  ]
 });
 formatter.step({
   "name": "I enter the Username \"abc@xyz.com\"",
@@ -159,7 +180,12 @@ formatter.after({
 formatter.scenarioOutline({
   "name": "Login Failure Scenario using test data as Examples",
   "description": "",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@sanity"
+    }
+  ]
 });
 formatter.step({
   "name": "I enter the Username \"\u003cUserName\u003e\"",
@@ -236,7 +262,15 @@ formatter.result({
 formatter.scenario({
   "name": "Login Failure Scenario using test data as Examples",
   "description": "",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@Login"
+    },
+    {
+      "name": "@sanity"
+    }
+  ]
 });
 formatter.step({
   "name": "I enter the Username \"abc@xyz.com\"",
@@ -312,7 +346,15 @@ formatter.result({
 formatter.scenario({
   "name": "Login Failure Scenario using test data as Examples",
   "description": "",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@Login"
+    },
+    {
+      "name": "@sanity"
+    }
+  ]
 });
 formatter.step({
   "name": "I enter the Username \"pqr@xyz.com\"",
